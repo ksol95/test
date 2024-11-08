@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание</title>
+    <style>
+      #answer-4 {
+        min-inline-size: 200px;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: center;
+
+        max-width: 90%;
+        margin: 16px auto;
+        overflow: scroll;
+      }
+      #answer-4 table {
+        flex: 0 1 200px;
+        border-inline-start: 3px solid #ff8000;
+        text-align: end;
+        table-layout: fixed;
+        border-collapse: collapse;
+      }
+      #answer-4 table th {
+        background-color: #f2f2f2;
+      }
+      #answer-4 table tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      #answer-4 table td:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Тестовое задание</h1>
+    <h2>Задача 1</h2>
+    <p>
+      Разработайте функцию, которая принимает целое число в качестве аргумента и
+      возвращает строку, содержащую это число и слово "компьютер" в нужном
+      склонении по падежам в зависимости от числа. Например, при вводе числа 25
+      функция должна возвращать "25 компьютеров", для числа 41 — "41 компьютер",
+      а для числа 1048 — "1048 компьютеров".
+    </p>
+    <input
+      type="number"
+      id="input-1"
+      placeholder="Введите число компьютеров"
+      min="0"
+      max="999999999999999"
+    />
+    <p>Ответ: <span id="answer-1"></span></p>
+    <hr />
+    <h2>Задача 2</h2>
+    <p>
+      Написать функцию/метод, которая на вход получает массив положительных
+      целых чисел произвольной длины. Например [42, 12, 18]. На выходе
+      возвращает массив чисел, которые являются общими делителями для всех
+      указанных числе. В примере это будет [2, 3, 6].
+    </p>
+    <label for="input-2">Введите элемент массива</label>
+    <input
+      type="number"
+      id="input-2"
+      placeholder="Введите элемент массива"
+      min="0"
+      max="999999999999999"
+    />
+    <button id="push-btn-2">push</button>
+    <p id="caption-2">Массив: []</p>
+    <button id="btn-2">Получить общие делители</button>
+    <p>Ответ:</p>
+    <ul id="answer-2"></ul>
+    <hr />
+    <h2>Задача 3</h2>
+    <p>
+      Написать функцию/метод, которая возвращает массив простых чисел в
+      диапазоне (2 числа - минимальное и максимальное) заданных чисел. Например,
+      на вход переданы 2 числа: от 11 до 20 (диапазон считается включая
+      граничные значения).<br />
+      На выходе программа должна выдать [11, 13 , 17, 19]
+    </p>
+    <input
+      type="number"
+      id="input-from-3"
+      placeholder="От"
+      min="0"
+      max="999999999999999"
+    />
+    <input
+      type="number"
+      id="input-to-3"
+      placeholder="До"
+      min="0"
+      max="999999999999999"
+    />
+    <button id="btn-3">go</button>
+    <p id="answer-3"></p>
+    <hr />
+    <p>
+      Написать метод, который в консоль выводит таблицу умножения. На вход метод
+      получает число, до которого выводит таблицу умножения. В консоли должна
+      появиться таблица. Например, если на вход пришло число 5, то получим:
+    </p>
+    <img
+      src="./img/task-4.png"
+      alt="пример задачи номер 4"
+      style="display: block; margin: 0 auto 16px; width: 200px"
+    />
+    <input
+      type="number"
+      id="input-4"
+      placeholder="Введите число"
+      min="0"
+      max="999999999999999"
+    />
+    <button id="btn-4">go</button>
+
+    <div id="answer-4"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
